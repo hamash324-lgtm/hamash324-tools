@@ -3,34 +3,6 @@ import Link from 'next/link';
 export default function Dashboard() {
   const toolsList = [
     {
-      id: 'osint-tracker',
-      name: 'BYTE OSINT & Threat Intel Hub',
-      description: 'Advanced link intelligence campaign generator and target telemetry logger.',
-      path: '/tools/osint-tracker',
-      status: 'Ultimate Power',
-    },
-    {
-      id: 'api-workbench',
-      name: 'Advanced API Client & Workbench',
-      description: 'Test HTTP requests, inspect headers, and analyze latency live (Mini Postman).',
-      path: '/tools/api-workbench',
-      status: 'Elite Powerhouse',
-    },
-    {
-      id: 'glassmorphism',
-      name: 'CSS Glassmorphism Generator',
-      description: 'Design frosted glass UI elements and generate production CSS.',
-      path: '/tools/glassmorphism',
-      status: 'New',
-    },
-    {
-      id: 'adsense-calc',
-      name: 'AdSense CTR & RPM Optimizer',
-      description: 'Calculate real-time CTR, CPC, and RPM metrics with layout tips.',
-      path: '/tools/adsense-calc',
-      status: 'Active',
-    },
-    {
       id: 'apk-analyzer',
       name: 'Advanced APK Analyzer',
       description: 'Inspect packages, extract permissions, app ID, and security config.',
@@ -43,27 +15,6 @@ export default function Dashboard() {
       description: 'Design app layouts and instantly generate configuration files.',
       path: '/tools/app-builder',
       status: 'Global',
-    },
-    {
-      id: 'json-formatter',
-      name: 'JSON Formatter & Validator',
-      description: 'Format, validate, and beautify JSON payloads instantly.',
-      path: '/tools/json-formatter',
-      status: 'Essential',
-    },
-    {
-      id: 'base64',
-      name: 'Base64 Encoder / Decoder',
-      description: 'Encode and decode text or tokens securely in real-time.',
-      path: '/tools/base64',
-      status: 'Essential',
-    },
-    {
-      id: 'hash-generator',
-      name: 'SHA & MD5 Hash Generator',
-      description: 'Generate secure cryptographic hashes for strings and data.',
-      path: '/tools/hash-generator',
-      status: 'Active',
     },
     {
       id: 'analyzer',
@@ -112,7 +63,7 @@ export default function Dashboard() {
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem' }}>
                   <h3 style={{ margin: 0, color: '#ffffff', fontSize: '1.05rem' }}>{tool.name}</h3>
-                  <span style={{ fontSize: '0.7rem', background: tool.status === 'Ultimate Power' ? 'rgba(239, 68, 68, 0.2)' : tool.status === 'Elite Powerhouse' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(0, 229, 255, 0.1)', color: tool.status === 'Ultimate Power' ? '#ef4444' : tool.status === 'Elite Powerhouse' ? '#34d399' : '#00e5ff', padding: '3px 8px', borderRadius: '4px', border: tool.status === 'Ultimate Power' ? '1px solid rgba(239, 68, 68, 0.4)' : tool.status === 'Elite Powerhouse' ? '1px solid rgba(52, 211, 153, 0.4)' : '1px solid rgba(0, 229, 255, 0.2)' }}>{tool.status}</span>
+                  <span style={{ fontSize: '0.7rem', background: 'rgba(0, 229, 255, 0.1)', color: '#00e5ff', padding: '3px 8px', borderRadius: '4px', border: '1px solid rgba(0, 229, 255, 0.2)' }}>{tool.status}</span>
                 </div>
                 <p style={{ color: '#9ca3af', fontSize: '0.85rem', lineHeight: '1.5', marginBottom: '1.5rem' }}>{tool.description}</p>
               </div>
