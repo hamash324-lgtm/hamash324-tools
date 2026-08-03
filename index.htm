@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTE - منصة الأدوات التقنية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col">
+
+    <!-- شريط التنقل العلوي -->
+    <header class="bg-gray-900 border-b border-gray-800 p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-3 space-x-reverse">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-bold text-lg">BYTE</span>
+            <span class="text-sm text-gray-400">لوحة التحكم والأدوات</span>
+        </div>
+        <div>
+            <span class="text-xs bg-green-900 text-green-300 px-2.5 py-1 rounded-full border border-green-700">
+                <i class="fa-solid fa-circle text-[8px] ml-1 animate-pulse"></i> متصل
+            </span>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="flex-1 p-4 max-w-6xl mx-auto w-full space-y-6">
+        
+        <!-- قسم الترحيب والإحصائيات -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-gray-900 border border-gray-800 p-4 rounded-xl shadow">
+                <div class="text-gray-400 text-sm">حالة النظام</div>
+                <div class="text-2xl font-bold text-green-400 mt-1">يعمل بكفاءة</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-4 rounded-xl shadow">
+                <div class="text-gray-400 text-sm">أدوات BYTE النشطة</div>
+                <div class="text-2xl font-bold text-blue-400 mt-1">جاهزة للاستخدام</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-4 rounded-xl shadow">
+                <div class="text-gray-400 text-sm">البيئة المضيفة</div>
+                <div class="text-2xl font-bold text-purple-400 mt-1">Vercel Cloud</div>
+            </div>
+        </section>
+
+        <!-- إدارة الأدوات والسكربتات -->
+        <section class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow">
+            <h2 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2 text-blue-400">
+                <i class="fa-solid fa-toolbox ml-2"></i>أدوات متجر BYTE التقني
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="bg-gray-950 p-4 rounded-lg border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-semibold text-blue-300">محلل السكربتات المتقدم</h3>
+                        <p class="text-xs text-gray-400 mt-1">فحص وتحليل الأكواد والأخطاء تلقائياً.</p>
+                    </div>
+                    <button onclick="alert('الأداة جاهزة ومفعلة!')" class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-3 py-2 rounded transition">تشغيل</button>
+                </div>
+
+                <div class="bg-gray-950 p-4 rounded-lg border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-semibold text-blue-300">إدارة الروابط والـ Tokens</h3>
+                        <p class="text-xs text-gray-400 mt-1">التحكم ببيانات الربط والاتصال بأمان.</p>
+                    </div>
+                    <button onclick="alert('تم تفعيل الاتصال بنجاح!')" class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-3 py-2 rounded transition">إدارة</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-gray-900 border-t border-gray-800 text-center py-4 text-xs text-gray-500">
+        جميع الحقوق محفوظة لصالح متجر وأدوات BYTE التقنية
+    </footer>
+
+</body>
+</html>
+
